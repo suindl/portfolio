@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('font.css');
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #222;}
+
+.centerbox1730 {max-width: 1730px; margin: 0 auto;}
+body {font-family: 'ChosunCentennial'; font-weight: 200;}
+
+
+/* header */
+
+header {width: 100%; background: url(../images/main_slide.png);  top: 0; left: 0;
+height: 100vh;} 
+
+.name  {width: 100%; height: 70px; margin-bottom: 100px;}
+.name hr {width:1190px ; height: 1px;  background-color : #F8EBDA; border: 0;
+margin-top: 35px; float: left;}
+.name p {float: right; margin-top: 23px; color: #F8EBDA; font-size: 20px;}
+
+.name_box {width: 720px; height: 180px;margin: 0 auto; margin-bottom: 90px; text-align: center;}
+.name_box span {font-size: 120px; color: #F8EBDA;}
+.name_box p {font-size: 20px; color: #F8EBDA; letter-spacing: 60px; margin-left: 50px;}
+
+.header_box {width: 620px; height: 420px;  margin: 0 auto;  display: flex; flex-direction: column; align-items: center;  position: relative;}
+.header_box img {width: 235px; height: 240px;}
+.header_box p {width: 100%; height: 30px;  margin-bottom: 57px;}
+.header_box hr {width: 477px; height: 1px; border: 0; border-top: 1px dashed #F8EBDA;}
+
+    .header_box::before {
+        content: ""; /* 동그라미 생성 */
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #F8EBDA;
+        position: absolute;
+        left: 10%;
+        bottom: 20%;
+    }
+
+    .header_box::after {
+    content: ""; /* 두 번째 동그라미 생성 */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #F8EBDA;
+    position: absolute;
+    bottom: 20%;
+
+    }
+
+    .header_box .third_circle {
+        content: ""; /* 세 번째 동그라미 생성 */
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #F8EBDA;
+        position: absolute;
+        right: 10%;
+        bottom: 20%;
+    }
+
+.name.end{width: 100%; height: 70px;}
+.name.end p {color: #F8EBDA; font-size: 20px; float: left;}
+.name.end hr {width:1190px ; height: 1px;  background-color : #F8EBDA; border: 0;
+float: right;}
+
+
+/* resume */
+
+.resume {width: 100%; height: 1085px; background: url(../images/slide2.png); }
+
+.name.intro  {width: 100%; height: 70px; margin-bottom: 145px;}
+.name.intro hr {width:1190px ; height: 1px;  background-color : #F8EBDA; border: 0;
+margin-top: 35px; float: left;}
+.name.intro p {float: right; margin-top: 23px; color: #F8EBDA; font-size: 20px;}
+
+.resume_box {width: 520px; height: 600px; float: left; text-align: center; margin: 0 auto;}
+.resume_box span {font-size: 65px; color: #F8EBDA;; margin-bottom: 67px; display: block;}
+.resume_box .me {width: 290px; height: 315px; border-radius: 50%; margin: 0 auto; margin-bottom: 50px;}
+.resume_box img {margin-left: -17px; }
+.resume_box p {color: #4D2725; width: 375px; height: 90px;
+font-size: 30px; text-align: center; margin: 0 auto;}
+
+.resume_cont {width: 1140px; height: 665px; float: right; margin-bottom: 110px;}
+
+.resume_cont ul {display: flex; flex-wrap: wrap; } 
+.resume_cont li {box-sizing: border-box; text-align: left;}
+.resume_cont li:nth-child(1) {width: 261px; height: 333px;}
+.resume_cont li:nth-child(2) {width: 357px; height: 333px;}
+.resume_cont li:nth-child(3) {width: 500px; height: 333px; flex-grow: 1;}
+.resume_cont li:nth-child(4) {width: 60%; height: 333px; flex-shrink: 1;}  
+
+.resume_cont li span {font-size: 30px; color: #4D2725; margin-bottom: 50px;
+display: block; margin-left: 20px; margin-top: 10px;}
+
+.resume_cont li  p {font-size: 22px; color: #F8EBDA; font-family: 'TheJamsil2Light'; margin-bottom: 25px;  margin-left: 20px; }
+.resume_cont li  p.fir {margin-bottom: 0px;}
+.resume_cont li  p.edu {width: 400px; margin-left: 229px; }
+
+.resume .end  {width: 100%; height: 70px; float: left; }
+.resume .end p { margin-top: 23px; color: #F8EBDA; font-size: 20px; float: left;}
+.resume .end hr {width:1190px ; height: 1px;  background-color : #F8EBDA; border: 0;
+    margin-top: 35px; float: right;}
+
+
+/* contents */
+
