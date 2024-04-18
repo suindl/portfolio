@@ -3,14 +3,14 @@ $('.lp,.btn_youtube').click(function(){;
     if(audioCheck == 1){
         $('.pause').fadeIn(100)
         $('body').prepend('<div id="youtube_sound"><iframe src="https://www.youtube.com/embed/qR69Rf4IG6g?autoplay=1" allow="autoplay;"></iframe></div>')
-        $('.header_box').addClass('on')
+        $('.header_box').addClass('on');
+        $('#youtube_sound').css('display', 'none');
     }
     audioCheck = 2
     return false
 });
 
-
-$('.pause').click(function(){
+$('.pause').click(function(){   
     $('#youtube_sound').remove();
     $('.pause').fadeOut(100)
     $('.header_box').removeClass('on')
